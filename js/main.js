@@ -16,4 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
     phoneAnchor.textContent = formatted;
     phoneAnchor.href = telLink;
   }
+
+  const yearSpan = document.getElementById("current-year");
+  if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+  }
+
 });
+
+
